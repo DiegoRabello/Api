@@ -9,13 +9,24 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MainApplication {
 	public static void main(String[] args) {
+		//Inicia A Classe Scanner
 		Scanner scanner = new Scanner(System.in);
+
+		//Método Limpa Console
 		clearConsole();
+
+		//Texto Para Escolher O caminho que deseja seguir.
 		System.out.println("========== Menu ==========");
 		System.out.println("1. Ver Significado da Uf ");
 		System.out.println("2. Ver Região");
+
+		//Scaneia o Input do Usuário
 		int menu = scanner.nextInt();
+
+		//Scaneia nova Linha
 		scanner.nextLine();
+
+		//Método Para ir Para escolha do Usuário
 		switch (menu) {
 			case 1:
 				System.out.println("Digite a Sigla de Seu Estado: ");
