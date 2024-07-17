@@ -16,9 +16,15 @@ public class MainApplication {
 		clearConsole();
 
 		//Texto Para Escolher O caminho que deseja seguir.
-		System.out.println("========== Menu ==========");
-		System.out.println("1. Ver Significado da Uf ");
-		System.out.println("2. Ver Região");
+		System.out.println("\t\t\t=============================");
+        System.out.println("\t\t\t|                           |");
+        System.out.println("\t\t\t|         Menu              |");
+        System.out.println("\t\t\t|                           |");
+        System.out.println("\t\t\t|       1. Ver UF           |");
+        System.out.println("\t\t\t|       2. Ver Região       |");
+        System.out.println("\t\t\t|       3. Sair             |");
+        System.out.println("\t\t\t|                           |");
+        System.out.println("\t\t\t=============================");
 
 		//Scaneia o Input do Usuário
 		int menu = scanner.nextInt();
@@ -45,6 +51,9 @@ public class MainApplication {
 						i++;
 					}	
 				}	
+				break;
+			case 3:
+				System.out.println("Saindo...");
 				break;
 			default:
 				System.out.println("Número Invalido!, Tente Novamente.");
